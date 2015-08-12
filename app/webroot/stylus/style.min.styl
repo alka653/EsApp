@@ -1,0 +1,186 @@
+light_red = #e74c3c
+dark_red = #c0392b
+white_color = #fff
+light_blue = #3498db
+dark_blue = #2980b9
+light_esmerald = #2ECC71
+dark_esmerald = #27ae60
+light_yellow = #FFE76B
+dark_yellow = #FFBA19
+
+html
+	position relative
+	min-height 100%
+
+body
+	background-color #F5F5F5
+	margin-bottom 60px
+	font-family 'Roboto', sans-serif
+	
+.navbar-red
+	background-image url('../img/photo/wall.png')
+	color white_color
+	.navbar-brand
+		color white_color
+	.navbar-nav 
+		li
+			a
+				color white_color
+				background-color transparent
+				&:hover
+				&:active
+				&:focus
+					background-color transparent
+			&:hover
+			&:active
+			&:focus
+				color white_color
+
+.container-init
+	margin-top 80px
+
+.spacing
+	margin-bottom 50px
+
+.button-college
+	background-color light_esmerald
+	box-shadow 0px 3px 0px dark_esmerald
+	
+.button-danger
+	background-color light_red
+	box-shadow 0px 3px 0px dark_red
+	
+.button-danger
+.button-college
+	color white_color
+	&:hover
+	&:active
+	&:focus
+		color white_color
+	&:active
+		margin-top 3px
+		box-shadow 0px 0px 0px
+		margin-bottom -3px
+	
+.card
+	background-color #fff
+	padding 15px
+	box-shadow 0px 2px 4px rgba(0, 0, 0, 0.12)
+
+.img-login
+	width 160px
+	height 160px
+	margin-bottom 15px
+	
+.warning
+	background-color dark_yellow
+	
+.success
+	background-color light_esmerald
+
+.danger
+	background-color light_red
+
+.success
+.warning
+.danger
+	width 100%
+	height auto
+	padding 15px
+	color white_color
+
+.error-title
+.error-icon
+	font-size 80px
+
+.error-text
+	font-size 30px
+	
+.error-title
+.error-text
+	color #6C6C6C
+
+.error-icon
+	color light_yellow
+	text-shadow 0 1px 1px rgba(0,0,0,0.2)
+
+.edit
+	height 170px
+	width auto
+	background-color rgba(0, 0, 0, .5)
+	margin-top -170px
+	padding 20px
+	position relative
+	display none
+
+.image-college
+	width auto
+	height 190px
+	margin 0 auto
+
+.active, .inactive
+	color white_color
+
+.active
+	background-color light_esmerald
+
+.inactive
+	background-color light_red
+
+.footer
+	position absolute
+	bottom 0
+	width 100%
+	height auto
+	padding 20px
+	color white_color
+	background-color dark_blue
+	box-shadow 0px -5px 0px light_blue
+
+.dropdown-menu
+	border 0px
+	border-radius 0px
+	box-shadow 0 1px 4px rgba(0,0,0,.175)
+	li
+		a
+			color #333 !important
+			&:hover
+				color white_color !important
+				background-color dark_blue !important
+
+.dropdown-submenu
+	position relative
+	> .dropdown-menu
+		top 0
+		margin-top -6px
+		margin-left -1px
+	> .dropdown-menu-left
+		right 100%
+		left auto
+	> .dropdown-menu-right
+		right auto
+		left 100%
+	&:hover
+		> .dropdown-menu
+			display block
+		> a
+			&:after
+				border-left-color white_color
+	> a
+		&:after
+			display block
+			content " "
+			float right
+			width 0
+			height 0
+			border-color transparent
+			border-style solid
+			border-width 5px 0 5px 5px
+			border-left-color #ccc
+			margin-top 5px
+			margin-right -10px
+	.pull-left
+		float none
+		> .dropdown-menu
+			left -100%
+			margin-left 10px
